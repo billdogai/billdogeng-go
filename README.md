@@ -11,7 +11,7 @@ The wire format and method surface are identical across all language SDKs.
 ## Install
 
 ```sh
-go get github.com/billdogai/billdogeng-go@v1.1.1-beta.3
+go get github.com/billdogai/billdogeng-go@v1.1.1-beta.4
 ```
 
 ```go
