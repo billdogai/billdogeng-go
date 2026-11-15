@@ -1,12 +1,15 @@
 # billdogeng-go
 
+[![Docs](https://img.shields.io/badge/docs-server%20SDKs-black)](https://billdog.io/docs/server-sdk)
+
 Official **BilldogEng** server SDK for Go — the engagement suite for server-side
 use: Analytics, Feature Flags (remote + local evaluation), Surveys (data API),
 Messaging dispatch, and LLM observability.
 
-This is a faithful port of the canonical Node reference SDK (`native-sdks/node`)
-and conforms to the cross-language [server SDK spec](../../scratch/server-sdk-spec.md).
-The wire format and method surface are identical across all language SDKs.
+Part of [BillDog](https://billdog.io). It has the same wire format and method
+surface as the [Node SDK](https://www.npmjs.com/package/billdogeng-node) and every
+other BillDog server SDK, so events and flags behave identically across languages.
+Full guide: [billdog.io/docs/server-sdk](https://billdog.io/docs/server-sdk).
 
 ## Install
 
@@ -178,6 +181,30 @@ Until it lands here, either verify in a Node service, or call the
 `auth-introspect` endpoint over HTTP — that costs a network round-trip per
 check, and in exchange tells you whether the session is live *right now* rather
 than only that the token was valid when it was issued.
+
+## Documentation and resources
+
+- [Server SDK guide](https://billdog.io/docs/server-sdk) — all languages, configuration and quotas
+- [Feature flags](https://billdog.io/docs/feature-flags) — remote and local evaluation
+- [Product analytics](https://billdog.io/docs/product-analytics)
+- [Surveys](https://billdog.io/docs/surveys)
+- [Messaging](https://billdog.io/docs/messaging)
+- [LLM observability](https://billdog.io/docs/llm-observability)
+- [REST API reference](https://billdog.io/docs/api-reference)
+- [Support](https://billdog.io/support) — questions, bugs and feature requests
+
+## Other BillDog SDKs
+
+| Platform | Package | Docs |
+|---|---|---|
+| iOS (Swift) | [billdog-ios-spm](https://github.com/billdogai/billdog-ios-spm) | [iOS guide](https://billdog.io/docs/ios) |
+| Android (Kotlin) | [billdog-android-full](https://github.com/billdogai/billdog-android-full) · [billdog-android-eng](https://github.com/billdogai/billdog-android-eng) | [Android guide](https://billdog.io/docs/android) |
+| React Native · Flutter · Web | npm · pub.dev | [React Native](https://billdog.io/docs/react-native) · [Flutter](https://billdog.io/docs/flutter) · [Web](https://billdog.io/docs/web) |
+| Superwall bridge (iOS) | [billdog-ios-superwall](https://github.com/billdogai/billdog-ios-superwall) | [Superwall integration](https://billdog.io/docs/superwall-integration) |
+| Server (Go, PHP, Node, Python…) | [billdogeng-go](https://github.com/billdogai/billdogeng-go) · [billdogeng-php](https://github.com/billdogai/billdogeng-php) | [Server SDKs](https://billdog.io/docs/server-sdk) |
+| AI coding agents (MCP) | [billdog-mcp](https://github.com/billdogai/billdog-mcp) | [MCP server](https://billdog.io/docs/mcp-server) |
+
+Not sure which one you need? See [choosing an SDK](https://billdog.io/docs/sdk-selection).
 
 ## License
 
