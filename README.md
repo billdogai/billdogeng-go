@@ -14,7 +14,7 @@ Full guide: [billdog.io/docs/server-sdk](https://billdog.io/docs/server-sdk).
 ## Install
 
 ```sh
-go get github.com/billdogai/billdogeng-go@v1.1.1-beta.5
+go get github.com/billdogai/billdogeng-go@v1.1.2-beta.5
 ```
 
 ```go
